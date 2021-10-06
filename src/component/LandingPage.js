@@ -118,7 +118,7 @@ const LandingPage = () => {
       >
         <Grid item style={{ marginLeft: '2em', marginTop: '-1em' }}>
           <Typography variant='subtitle2'>
-            Welcome {data.user.firstname}
+            {/* Welcome {data.user.firstname} */}
           </Typography>
         </Grid>
       </Grid>

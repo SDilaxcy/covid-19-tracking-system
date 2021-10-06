@@ -1,5 +1,6 @@
 import { API } from '../../config';
 
+//http://localhost:8000/api
 export const getAllVaccine = (sortBy) => {
   return fetch(`${API}/vaccines`, {
     method: 'GET',

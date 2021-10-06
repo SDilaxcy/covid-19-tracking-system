@@ -19,7 +19,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route exact path='/' render={(props) => <Login />} />
+          {/* <Route exact path='/' render={(props) => <Login />} /> */}
           <PrivateRoute path='/LandingPage' exact component={LandingPage} />
           <PrivateRoute path='/Vaccines' exact component={Vaccines} />
           <PrivateRoute

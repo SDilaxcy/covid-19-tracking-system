@@ -30,7 +30,7 @@ const AddUserDetails = () => {
     age: '',
     phone_number: '',
     vaccine: '',
-    user: data.user._id,
+    user: "1001"
   });
 
   useEffect(() => {

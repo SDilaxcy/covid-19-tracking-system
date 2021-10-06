@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Paginator from 'react-hooks-paginator';
 import TableProjectItems from './TableProjectItems';
+import GeneratePDF from '../ReportGenerator';
 
 const TableCategoryItems = ({ applyVaccine, deleteApplyVaccine }) => {
   const pageLimit = 5;
@@ -45,6 +46,13 @@ const TableCategoryItems = ({ applyVaccine, deleteApplyVaccine }) => {
             <i className='icon icon-plus mr-2' />
             Add Patient
           </Link>
+        </div>
+        <div
+          className='ps-btn success'
+          onClick={() => GeneratePDF(currentData)}
+        >
+          <i className='icon icon-plus mr-2' />
+          Report PDF
         </div>
       </div>
 
